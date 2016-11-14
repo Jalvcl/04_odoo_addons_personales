@@ -19,12 +19,12 @@
 #
 ##############################################################################
 {
-    'name' : 'Fleet Management',
+    'name' : 'maquinas Management',
     'version' : '0.1',
     'author' : 'OpenERP S.A.',
     'sequence': 110,
     'category': 'Managing vehicles and contracts',
-    'website' : 'https://www.odoo.com/page/fleet',
+    'website' : 'https://www.odoo.com/page/maquinas',
     'summary' : 'Vehicle, leasing, insurances, costs',
     'description' : """
 Vehicle, leasing, insurances, cost
@@ -32,11 +32,11 @@ Vehicle, leasing, insurances, cost
 With this module, Odoo helps you managing all your vehicles, the
 contracts associated to those vehicle as well as services, fuel log
 entries, costs and many other features necessary to the management 
-of your fleet of vehicle(s)
+of your maquinas of vehicle(s)
 
 Main Features
 -------------
-* Add vehicles to your fleet
+* Add vehicles to your maquinas
 * Manage contracts for vehicles
 * Reminder when a contract reach its expiration date
 * Add services, fuel log entry, odometer values for all vehicles
@@ -49,15 +49,15 @@ Main Features
         'board'
     ],
     'data' : [
-        'security/fleet_security.xml',
+        'security/maquinas_security.xml',
         'security/ir.model.access.csv',
-        'fleet_view.xml',
-        'fleet_cars.xml',
-        'fleet_data.xml',
-        'fleet_board_view.xml',
+        'maquinas_view.xml',
+        'maquinas_cars.xml',
+        'maquinas_data.xml',
+        'maquinas_board_view.xml',
     ],
 
-    'demo': ['fleet_demo.xml'],
+    'demo': ['maquinas_demo.xml'],
 
     'installable' : True,
     'application' : True,

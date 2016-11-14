@@ -30,7 +30,7 @@ from dateutil.relativedelta import relativedelta
 def str_to_datetime(strdate):
     return datetime.datetime.strptime(strdate, tools.DEFAULT_SERVER_DATE_FORMAT)
 
-class fleet_vehicle_cost(osv.Model):
+class maquinas_vehicle_cost(osv.Model):
     _name = 'fleet.vehicle.cost'
     _description = 'Cost related to a vehicle'
     _order = 'date desc, vehicle_id asc'
